@@ -17,6 +17,7 @@ class Scraper
   end 
   
   def get_courses 
+    self.get_page.css(".post")
     # doc.css(".post")[2].css("h2").text -course name 
     # doc.css(".post")[2].css(".date").text -FT/PT (*em)
     # doc.css(".post")[2].css("p").text -description
